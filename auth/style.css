@@ -1,0 +1,81 @@
+body{
+	margin: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+} 
+.form{
+	position: relative;;
+}
+
+.form h1{
+	position: absolute;
+	top: 10%;
+	font-size: large;
+	margin: 0;
+}
+.form form{
+   background-color: rgb(255, 255, 255);
+   height: 50vh;
+   width: 30vw;
+   display: flex;
+   flex-direction: column;
+   gap: 1em;
+   align-items: center;
+   justify-content: center;
+}
+.form-label{
+	display: flex;
+	flex-direction: column;
+	gap: 0.2em;
+}
+.form-label label{
+    display: none;
+}
+.form-label input{
+	width: 20vw;
+	height: 5vh;
+	/* border-radius: 10px; */
+	/* border-color: #d9d9d9; */
+	color: #000000;
+	border-top: none;
+	border-left: none;
+    border-right: none;
+	border-bottom: #d9d9d9;
+	padding-left: 1vw;
+	
+}
+.form-label input::placeholder{
+    padding-left: 1vw;
+}
+.form form .button{
+	position: absolute;
+	bottom: 10%;
+	width: 15vw;
+	height: 5vh;
+	border:none;
+	background-color: white;
+	border-color: white;
+	box-shadow: 2px 1px 10px rgba(0, 0, 0, 0.185);
+}
+.form form .button:hover{
+	 animation: clicked 1s forwards;
+	 cursor: pointer;
+}
+@keyframes clicked {
+	from{
+        transform: translateY(0px);
+	}
+	to{
+		transform: translateY(-5px);
+	}
+}
+footer{
+	color: white;
+	position: absolute;
+	bottom: 5%;
+    left: 42%;
+}
