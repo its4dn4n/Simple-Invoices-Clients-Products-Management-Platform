@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Roboto&display=swap');
+body{    
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.navbar{
+    position: fixed;
+    top: 0; 
+    height: 15%; 
+    width: 100%;
+    padding: 0; margin:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    z-index: 1;
+}
+.nav {
+  /*   position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    display: flex;
+    gap: 4em;
+    font-size: large;
+}
+.nav-item{
+  cursor: pointer;
+}
+.nav-item a{
+    text-decoration: none;
+    color: black;
+}
+.nav-item p{
+ margin: 0;
+}
+.border-bottom{
+    width: 20%;
+    height: 2px;
+    border-radius: 20px;
+    background-color: orangered;
+}
+#page1Border{
+    width: 100%;
+}
+.nav-item:hover .border-bottom{
+        animation: show 0.5s ease-in-out forwards;
+}
+@keyframes show {
+    from{width:10px}
+    to  {width:100%;}
+}
+.nav-logo{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+}
+.nav-profile{
+    position:absolute;
+    top: 20%;
+    right:5%;
+    cursor:pointer;
+}
+.nav-profile:hover{
+   animation: rotate 1s forwards;
+}
+@keyframes rotate{
+    from{ transform: rotate(0deg);}
+    to{ transform: rotate(360deg); }
+}
+.nav-logout{
+    display:none;
+    position:absolute;
+    top: 80%;
+    right:5.6%;
+    cursor:pointer;
+    text-align: center;
+}
+.nav-profile-close{
+    display: none;
+    position: absolute;
+    top: 37%;
+    right:7%;
+    cursor:pointer;
+}
+.nav-profile-close i{
+ font-size: x-large;
+}
+
+/* body */
+/* statistic boxes*/ 
+
+.container{
+    position:absolute;
+    bottom: 0;
+   /*  background-color: aqua; */
+    height: 85%;
+    width: 100%;
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+
+}
+.left-side{
+    height: 90%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    height: 25% ;
+    width: 100%;
+    background-color: grey;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    cursor: context-menu;
+}
+.box p{
+    font-size: x-large;
+    color: white;
+    text-align: center;
+    margin: 0; padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.box p:first-child{
+    font-family: 'EB Garamond', serif;
+    font-size: xx-large;
+}
+
+.box1{
+    background-color: rgba(255, 0, 0, 0.363);
+}
+.box1:hover{
+    background-color: rgba(255, 0, 0, 0.808);
+}
+.box2{
+    background-color: rgba(0, 255, 34, 0.363);
+}
+.box2:hover{
+    background-color: rgba(0, 255, 34, 0.829);
+}
+.box3{
+    background-color: rgba(0, 204, 255, 0.363);
+}
+.box3:hover{
+    background-color: rgba(0, 204, 255, 0.726);
+}
+.right-side{
+    position: relative;
+    height: 73%;
+    width: 50%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/**/
+  svg {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    padding-top: 40px;
+  }
+  
+  polyline {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 5s ease-in forwards;
+    animation-iteration-count: 10;
+    animation-direction: alternate;
+  }
+  
+  @keyframes dash{
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  .right-side p {
+    font-size: 2rem;
+    text-align:center;
+    color: #efefef;
+  }
+  .name {
+    font-size: .8rem;
+    font-weight: light;
+    opacity: 10%;
+  }
+  /**/
+/* iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+   */
+
+
+

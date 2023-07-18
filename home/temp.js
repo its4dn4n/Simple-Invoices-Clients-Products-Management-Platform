@@ -1,7 +1,3 @@
-const button = document.getElementById('switch-profile');
-const button2 = document.getElementById('switch-close');
-const logout = document.getElementById('show-logout');
-const show2 = document.getElementById('nav');
 const trace1 = document.getElementById('trace1');
 const trace2 = document.getElementById('trace2');
 const trace3 = document.getElementById('trace3');
@@ -10,26 +6,15 @@ const line2 = document.getElementById('line2');
 const line3 = document.getElementById('line3');
 let index= 1;
 
-button.addEventListener('click', function() {
-  logout.style.display="Block";
-  button.style.display="none";
-  button2.style.display="Block";
-});
 
-button2.addEventListener('click', function() {
-	logout.style.display="none";
-	button.style.display="block";
-	button2.style.display="none";
-  });
-  
-  // change between pages 
-if (index == 1){
+// change between pages 
+/* if (index == 1){
 }
 if (index == 2){
 }
 if (index == 3){
 }
-
+ */
   //match writing with line
   
   let value1 = trace1.value;

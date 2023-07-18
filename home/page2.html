@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
+	<link rel="stylesheet" href="page2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Cawa Project</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-logo"> 
+            <img style="width:80px;height:80px;" src="image.png" alt="logo">
+        </div>
+        <div class="nav">  
+            <div class="nav-item" id="page1"> 
+                <a href="welcome.html"><p>Home</p></a>
+                <div  class="border-bottom" id="page1Border"></div>
+            </div>
+            <div class="nav-item" id="page2"> 
+                <a href="page2.html"><p>Clients</p></a>
+                <div  class="border-bottom" id="page2Border"></div>
+            </div>
+            <div class="nav-item" id="page3">
+                <a href="page3.html"><p>Articles</p></a>
+                <div  class="border-bottom"  id="page3Border"></div>
+            </div>
+            <div class="nav-item" id="page4"> 
+                <a href="page4.html"><p>Factures</p></a>
+                <div  class="border-bottom"  id="page4Border"></div>
+            </div>
+            <div class="nav-item" id="page5"> 
+                <a href="page5.html"><p>Archive</p></a>
+                <div  class="border-bottom"  id="page5Border"></div>
+            </div>
+        </div>
+        <div class="nav-profile" id="switch-profile"> 
+            <h3>Adnan S.</h3>
+        </div>
+        <div class="nav-profile-close" id="switch-close"> 
+            <i class="fa fa-close"></i>
+        </div>
+        <div class="nav-item nav-logout" id="show-logout"> 
+            <p>Log Out</p>
+            <div  class="border-bottom"></div>
+        </div>
+    </div>
+<!-- 7 -->
+ <div class="page1content"  id="page1content">
+        <div class="clients">
+            <ul class="table-head">
+                <li>Name</li>
+                <li>Phone</li>
+                <li>Email</li>
+                <li>Action</li>
+            </ul>  
+            <ul>
+                <li>adnan</li>
+                <li>sematel</li>
+                <li>adn@gmail.com</li>
+                <li class="delete"  onclick="del()" >Delete<div  class="border-bottom-delete"></div></li>
+            </ul>  
+            <ul>
+                <li>a</li>
+                <li>semel</li>
+                <li>ad@m</li>
+                <li class="delete"  onclick="del()">Delete<div  class="border-bottom-delete"></div></li>
+            </ul>  
+            <ul>
+                <li>adnanVadnan</li>
+                <li>sematelsematel</li>
+                <li>ad@madn@gmail.com</li>
+                <li class="delete" onclick="del()">Delete<div  class="border-bottom-delete"></div></li>
+            </ul>  
+        </div>
+        <div class="add_client">
+            <div class="client_input">
+                <div ><input id="trace1" class="input" type="text" placeholder="Name"><div id="line1" class="border-bottom-add"></div></div>
+                <div ><input id="trace2" class="input" type="text" placeholder="Phone"><div id="line2" class="border-bottom-add"></div></div>
+                <div ><input id="trace3" class="input" type="text" placeholder="Email"><div id="line3" class="border-bottom-add"></div></div>
+            </div>
+            <div class="button" id="myClickButton">
+                ADD NEW USER 
+            </div>
+        </div>
+   </div>
+   
+
+<script src="page2.js"></script>
+</body>
+</html>
+ 

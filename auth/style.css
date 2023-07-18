@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display&family=Tajawal:wght@400;900&display=swap');
 body{
 	margin: 0;
 	width: 100vw;
 	height: 100vh;
-	background-color: black;
+	background-image: url("image2.jpeg");
+	background-position: center;
+	background-size: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	font-family: 'Tajawal', sans-serif;
 } 
 .form{
 	position: relative;;
@@ -13,43 +17,43 @@ body{
 
 .form h1{
 	position: absolute;
-	top: 10%;
-	font-size: large;
+	top: 15%;
+	font-size: x-large;
 	margin: 0;
 }
 .form form{
    background-color: rgb(255, 255, 255);
-   height: 50vh;
+   height: 70vh;
    width: 30vw;
+   border-radius: 10px;
    display: flex;
    flex-direction: column;
    gap: 1em;
    align-items: center;
    justify-content: center;
+   box-shadow: 2px 2px 8px #00000028;
 }
 .form-label{
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	gap: 0.2em;
+	justify-content: center;
+	align-items: center;
 }
-.form-label label{
-    display: none;
-}
+
 .form-label input{
-	width: 20vw;
-	height: 5vh;
+	width: 15vw;
+	height: 4vh;
+	margin-left: 5px;
 	/* border-radius: 10px; */
 	/* border-color: #d9d9d9; */
 	color: #000000;
-	border-top: none;
-	border-left: none;
-    border-right: none;
-	border-bottom: #d9d9d9;
-	padding-left: 1vw;
-	
+	border: none;
+	padding: 3px;
+	padding-left: 10px;
 }
 .form-label input::placeholder{
-    padding-left: 1vw;
+    padding-left: 10px;
 }
 .form form .button{
 	position: absolute;
@@ -57,9 +61,11 @@ body{
 	width: 15vw;
 	height: 5vh;
 	border:none;
-	background-color: white;
-	border-color: white;
+	background: linear-gradient( to right,rgb(248, 135, 5) , rgb(210, 245, 11));
+	color: white;
+	/* border-color: white; */
 	box-shadow: 2px 1px 10px rgba(0, 0, 0, 0.185);
+	border-radius: 10px;
 }
 .form form .button:hover{
 	 animation: clicked 1s forwards;
@@ -78,4 +84,10 @@ footer{
 	position: absolute;
 	bottom: 5%;
     left: 42%;
+}
+
+.signup-option{
+	position: absolute;
+	bottom: 20%;
+	padding-top: 0%;
 }

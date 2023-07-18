@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Roboto&display=swap');
+body{    
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.navbar{
+    position: fixed;
+    top: 0; 
+    height: 15%; 
+    width: 100%;
+    padding: 0; margin:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    z-index: 1;
+}
+.nav {
+  /*   position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    display: flex;
+    gap: 4em;
+    font-size: large;
+}
+.nav-item{
+  cursor: pointer;
+}
+.nav-item a{
+  text-decoration: none;
+  color: black;
+}
+.nav-item p{
+ margin: 0;
+}
+.border-bottom{
+    width: 20%;
+    height: 2px;
+    border-radius: 20px;
+    background-color: orangered;
+}
+#page2Border{
+    width: 100%;
+}
+.nav-item:hover .border-bottom{
+        animation: show 0.5s ease-in-out forwards;
+}
+@keyframes show {
+    from{width:10px}
+    to  {width:100%;}
+}
+.nav-logo{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+}
+.nav-profile{
+    position:absolute;
+    top: 20%;
+    right:5%;
+    cursor:pointer;
+}
+.nav-profile:hover{
+   animation: rotate 1s forwards;
+}
+@keyframes rotate{
+    from{ transform: rotate(0deg);}
+    to{ transform: rotate(360deg); }
+}
+.nav-logout{
+    display:none;
+    position:absolute;
+    top: 80%;
+    right:5.6%;
+    cursor:pointer;
+    text-align: center;
+}
+.nav-profile-close{
+    display: none;
+    position: absolute;
+    top: 37%;
+    right:7%;
+    cursor:pointer;
+}
+.nav-profile-close i{
+ font-size: x-large;
+}
+
+/* body */
+.clients{ 
+    position: relative;
+    height: 60vh;
+    width: 80vw;
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: 10% ; 
+    padding: 0;
+}
+.clients ul{
+   list-style: none;
+   display: flex;
+   justify-content: space-around;
+   padding: 0;
+}
+.clients ul li{
+  text-align: center;
+  width: 120px;
+}
+.table-head{
+    margin-bottom: 30px;
+    font-size: large;
+    color: gray;
+}
+.delete{
+    color: red;
+    cursor: pointer;
+}
+.border-bottom-delete {
+    width:30px;
+    height: 2px;
+    margin-top: 5px;
+    border-radius: 20px;
+    background-color: red;
+}
+.delete:hover .border-bottom-delete{
+    animation: show 0.5s ease-in-out forwards;
+}
+
+
+/*add user*/
+.button{
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: white ;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: orangered;
+    animation: show2 1s forwards;
+    cursor: pointer;
+}
+@keyframes show2 {
+    from{box-shadow: none;}
+    to{box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.137);}
+}
+@keyframes changeColor {
+    from{box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.137);}
+    to{box-shadow: 2px 2px 10px rgba(255, 68, 0, 0.329);}
+}
+.button:hover{
+    animation: changeColor 1s forwards;
+}
+.add_client{
+    position: fixed;
+    bottom: 0;
+ /*  background-color: rgba(0, 0, 0, 0.11); */
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+.client_input{
+     display:flex ;
+     gap: 1em;
+} 
+.client_input .input {
+     width: 180px;
+     height: 20px;
+     border-radius: 10px;
+     padding-left: 2%;
+     border: none;
+} 
+.client_input .input:focus {
+    outline: none;
+     border: none;
+} 
+.border-bottom-add{
+    width:10px;
+    height: 2px;
+    margin-top: 5px;
+    border-radius: 20px;
+    background-color: orangered;
+}
+.page1content{
+    height: 70%;
+    width: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.flex{
+    display: flex;
+    gap: 1em;
+}

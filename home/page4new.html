@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
+	<link rel="stylesheet" href="page4new.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Cawa Project</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-logo"> 
+            <img style="width:80px;height:80px;" src="image.png" alt="logo">
+        </div>
+        <div class="nav">  
+            <div class="nav-item" id="page1"> 
+                <a href="welcome.html"><p>Home</p></a>
+                <div  class="border-bottom" id="page1Border"></div>
+            </div>
+            <div class="nav-item" id="page2"> 
+                <a href="page2.html"><p>Clients</p></a>
+                <div  class="border-bottom" id="page2Border"></div>
+            </div>
+            <div class="nav-item" id="page3">
+                <a href="page3.html"><p>Articles</p></a>
+                <div  class="border-bottom"  id="page3Border"></div>
+            </div>
+            <div class="nav-item" id="page4"> 
+                <a href="page4.html"><p>Factures</p></a>
+                <div  class="border-bottom"  id="page4Border"></div>
+            </div>
+            <div class="nav-item" id="page5"> 
+                <a href="page5.html"><p>Archive</p></a>
+                <div  class="border-bottom"  id="page5Border"></div>
+            </div>
+        </div>
+        <div class="nav-profile" id="switch-profile"> 
+            <h3>Adnan S.</h3>
+        </div>
+        <div class="nav-profile-close" id="switch-close"> 
+            <i class="fa fa-close"></i>
+        </div>
+        <div class="nav-item nav-logout" id="show-logout"> 
+            <p>Log Out</p>
+            <div  class="border-bottom"></div>
+        </div>
+    </div>
+    <!---->
+    <div class="pagecontent">
+        <h2>Add products to your facture</h2>
+        
+        <form id="dynamic-form">
+        <!--     <div id="additional-info">
+                   <input type="text" name="date" required>
+                    <input type="email" name="email" required> 
+                    <div class="form-group">
+                        <label>Mode of Payment</label>
+                        <select class="payment-method" name="method" >
+                                <option value="m1">cash</option>
+                                <option value="m2">ccp</option>
+                                <option value="m3">baridimob</option>
+                        </select>
+                    </div>
+            </div> -->
+            <div id="product-list">
+                <div class="product-item">
+                    <div class="form-group">
+                        <label style="color:grey;">Product</label>
+                        <div class="flex-column">
+                        <select class="product-name" name="product[]">
+                            <option value="Product1">3das</option>
+                            <option value="Product2">lobya</option>
+                            <option value="Product3">chama</option>
+                        </select>   
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label style="color:grey;">Quantity</label>
+                        <input style="border: none;" type="number" class="quantity" name="quantity[]" value="1" min="1">
+                    </div>
+                    <div class="remove-product delete" onclick="removeProduct(this)">Remove<div  class="border-bottom-delete"></div></div>
+                </div>
+            </div>
+            <div class="delete add-product" onclick="addProduct()">Add Product<div  class="border-bottom-add"></div></div>
+            
+            <div class="button" id="submit-button" >
+                Submit
+            </div>
+           
+            </form>
+    </div>
+  
+ 
+
+<script src="page4new.js"></script>
+</body>
+</html>
+ 
