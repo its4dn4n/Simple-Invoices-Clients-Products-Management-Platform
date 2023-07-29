@@ -1,2 +1,2 @@
 # cawa_project_front
-![interfaces](interfaces.mp4)
+![interfaces](interfaces.gif)
